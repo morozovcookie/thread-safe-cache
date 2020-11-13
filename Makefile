@@ -32,5 +32,5 @@ test-unit:
 		-v \
 		-cover \
 		-coverprofile \
-		coverage.out
-	@echo "+ $@"
+		coverage.out \
+		"$(CURRENT_DIR)/..."
