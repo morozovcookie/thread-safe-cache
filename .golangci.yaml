@@ -1,0 +1,6 @@
+run:
+  tests: false
+  skip-files:
+    - grpc/v1/atlant.pb.go
+linters:
+  enable-all: true
