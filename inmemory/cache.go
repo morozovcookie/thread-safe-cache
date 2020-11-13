@@ -28,7 +28,7 @@ func (cache *Cache) Get(key tsc.Key) (tsc.Value, bool) {
 
 func (cache *Cache) GetOrSet(key tsc.Key, valueFn func() tsc.Value) tsc.Value {
 	val, ok := cache.Get(key)
-	if !ok {
+	if ok {
 		return val
 	}
 
